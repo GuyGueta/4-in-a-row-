@@ -1,0 +1,33 @@
+by guy gueta
+==================
+=  Description:  =
+==================
+Here I present the game '4 in a row'. The user has the option to play against another player or against a computer.
+The program incorporates GUI graphical interface.
+
+For playing, the server should insert the fllowing parameters: human/ai port
+The client should insert the fllowing parameters: human/ai port ip
+for example, for playing player vs player, put this parameters:
+first player (host): human 8000
+second player: human 8000 IP
+while IP can be found with this command: print(socket.gethostbyname(socket.gethostname()))
+for playing against the computer, change in one of the player to 'ai' instead 'human'.
+
+
+===============================
+This program contains 4 files:
+
+1. game: contains a Game class.
+This class is in charge of all the changes in the board dictionary.
+The functions in this class are checking the board and make changes in it when needed.
+
+2. ai: This file contain an Ai class.
+In this class there is only one function- 'find_legal_move', which checks where
+the computer can put a disc on the board, and place it.
+
+3. four_in_a_row: contains a GUI class. This class is in charge of the
+graphics of the game, and operating it as well. It changes the graphic board
+accordingly to the changes in the Game object (a board dictionary).
+
+4. communicator: auxiliary file provided by the course staff.
+===============================
